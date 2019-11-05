@@ -262,7 +262,13 @@
 	width: 50%;
 }
 
-/* ---------- Rodapé ---------- */
 
-
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
 }

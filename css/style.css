@@ -28,6 +28,7 @@ body{
 	background-color:#000;
 	color:#FFF;
 	position:fixed;
+	top: 0px;
 	z-index:99;
 }
 /* ---------- Contatos ---------- */
@@ -421,4 +422,13 @@ body{
     text-align: center;
     font-size: 12px;
     font-weight: lighter;
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
 }

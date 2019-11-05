@@ -1,0 +1,411 @@
+@media screen and (max-width: 720px){
+
+/* ---------- Pai ---------- */
+#container{
+	display:grid;
+	grid-gap:0rem 1rem;
+	grid-template-areas:
+	"cabecalho"
+	"banner"
+	"corpo"
+	"rodape";
+}
+
+/* ---------- Informações ---------- */
+.informacoes{
+	height:80px;
+}
+
+/* ---------- Contatos ---------- */
+.contatos{
+	width:25%;
+	height:80px;
+}
+
+.contatos img{
+	width:3.3em;
+	height:3.2em;
+	margin:18px 0px 0px 25px;
+	padding:0px;
+}
+
+#email, #email2, #tel, #whats{
+	display:none;
+}
+
+#email3{
+	display:block;
+}
+
+/* ---------- Menu Ícone para Tablet e Smartphone ---------- */
+.menu_icone{
+	height: 80px;
+	width: 80px;
+}
+
+.traco{
+	width: 50px;
+	height: 8px;
+	border-radius: 10px;
+	margin-top: 35px;
+	margin-left: 8px;
+}
+
+.traco:before, .traco:after{
+	border-radius: 10px;
+}
+
+.traco:before{
+	top: 17px
+}
+.traco:after{
+	bottom: 17px;
+}
+
+#marcacao:checked ~ label .traco{
+	transform:rotate(220deg);
+}
+
+#marcacao:checked ~ label .traco:before{
+	transform:rotate(276deg);
+	top: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+#marcacao:checked ~ label .traco:after{
+	transform:rotate(276deg);
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+
+/* ---------- Menu ---------- */
+.menu{
+	width: 100%;
+	margin-top: 80px;
+	height: auto;
+}
+
+.menu > ul{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.menu > ul > label > li{
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+#li_1{
+	transition: ease-in-out 0.8s;
+}
+#li_1:hover{
+	height: 330px;
+}
+#li_1:hover .menutextos1{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_1:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#li_2{
+	transition: ease-in-out 0.8s;
+}
+#li_2:hover{
+	height: 360px;
+}
+#li_2:hover .menutextos2{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_2:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#li_3{
+	transition: ease-in-out 0.8s;
+}
+#li_3:hover{
+	height: 320px;
+}
+#li_3:hover .menutextos3{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_3:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio1:checked ~ label > #li_1{
+	height: 330px;
+}
+#Radio1:checked ~ label > #li_1 .menutextos1{
+	max-height: 20em;
+	background-color:#333;
+}
+#Radio1:checked ~label > #li_1 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio2:checked ~ label > #li_2{
+	height: 360px;
+}
+#Radio2:checked ~ label > #li_2 .menutextos2{
+	max-height: 20em;
+	background-color:#333;
+}
+#Radio2:checked ~label > #li_2 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio3:checked ~ label > #li_3{
+	height: 320px;
+	/*position: static;*/
+}
+#Radio3:checked ~ label > #li_3 .menutextos3{
+	max-height: 20em;
+	background-color:#333;
+	/*position: absolute;*/
+}
+#Radio3:checked ~label > #li_3 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio1:checked ~ label > li > .menutextos1{
+	margin-top: 37px;
+}
+
+#Radio2:checked ~ label > li > .menutextos2{
+	margin-top: 38px;
+}
+
+#Radio3:checked ~ label > li > .menutextos3{
+	margin-top: 37px;
+}
+
+
+/* ---------- SubMenu Hover ---------- */
+
+.menu ul li:hover .menutextos1{
+	margin-top: 37px;
+}
+.menu ul li:hover .menutextos2{
+	margin-top: 38px;
+}
+.menu ul li:hover .menutextos3{
+	margin-top: 38px;
+}
+
+/* --------------- SubMenus --------------- */
+
+/* ---------- Menu Textos 1 ---------- */
+
+.menutextos1{
+	margin-left: -3%;
+	width: 106%;
+	margin-top: 37px;
+	overflow: hidden;
+	transition: max-height 0.8s;
+	max-height: 0;
+	position: initial;
+}
+
+.textos1{
+	display: block;
+	margin-top: -5px;
+	margin-left: 0px;
+}
+
+.menutextos1 h4{
+	float: left;
+	margin: 4vw 15px 0px 5vw;
+	width: 92px;
+	box-sizing:border-box;
+}
+
+.menutextos1 p{
+	width: 62vw;
+	margin-left: 28vw;
+	margin-top: 5vw;
+	box-sizing: border-box;
+}
+
+.menutextos1 hr{
+	width: 88%;
+	margin-left: 5vw;
+}
+
+/* ---------- Menu Textos 2 ---------- */
+
+.menutextos2{
+	margin-left: -3%;
+	width: 110%;
+	margin-top: 35px;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	max-height: 0;
+	position: initial;
+}
+
+.textos2{
+	display: block;
+	height: 42vw;
+}
+
+/* ---------- Menu Textos 3 ---------- */
+
+.menutextos3{
+	margin-top: 38px;
+	margin-left: -3%;
+	width: 100%;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	max-height: 0;
+	position: initial;
+	padding-left: 18%;
+}
+
+.textos3{
+	display: block;
+	margin-top: -10px;
+}
+
+.menutextos3 p{
+	width:70vw;
+	margin:20px 0px 0px 0vw;
+	text-align:center;
+}
+
+.menutextos3 i{
+	font-size:25px;
+	margin: 0px 0px 0px -5px;
+}
+
+
+/* ---------- Julio Marcelino ---------- */
+.nome{
+	margin:80px auto 0px auto;
+	height:auto;
+}
+
+.nomecentro {
+    margin: 0px auto;
+    width: 90%;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+.nome h1 {
+    font-size: 6em;
+    margin-top: 15px;
+}
+
+.nome button {
+    padding: 12px 15px;
+    font-size: 1.2em;
+    margin-left: 65%;
+}
+
+.enfeite1 {
+    margin: 12% 0px 0px 15%;
+}
+
+.enfeite2 {
+    margin: 4% 0px 0px 45%;
+}
+
+/* ---------- Banner ---------- */
+#banner{
+	margin-top:110px;
+}
+
+/* ---------- Corpo cor escura ---------- */
+.corpo1{
+	min-height: 1600px;
+	max-height: 1960px;
+	height: 295vw;
+}
+/* ---------- Corpo cor clara ---------- */
+.corpo2{
+	min-height: 1600px;
+	max-height: 1960px;
+	height: 295vw;
+}
+
+/* ---------- Quadrados ---------- */
+.quadrados{
+	width:100%;
+}
+
+#corpo h1{
+	font-size: 6vw;
+}
+
+#corpo h3{
+	font-size: 25px;
+}
+
+#corpo img{
+	width: 55%;
+}
+
+/* ---------- Rodapé ---------- */
+#rodape{
+	background-color:#333;
+	width:100%;
+	height:520px;
+	grid-area: rodape;
+}
+
+.centralizar{
+	width: 315px;
+	padding-top: 45px;
+	height: 395px;
+}
+
+.contatosrodape{
+	height:180px;
+	padding-top:0px;
+	width: 240px;
+}
+
+.contatosrodape img{
+	width: 2.6em;
+	height: 2.5em;
+	margin: 15px 0px 0px 30px;
+}
+
+.contatosrodape h3{
+	font-size: 1.5em;
+	padding:0px;
+	margin: 5px 0px 0px 90px;
+	width: 110px;
+	text-decoration: none;
+}
+
+.contatosrodape p{
+	margin: 23px 0px 0px 90px;
+	font-size: 1.1em;
+}
+
+.DA{
+	padding-top:30px;
+}
+
+.DA p{
+	font-size: 0.7em;
+}
+
+}

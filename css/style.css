@@ -12,7 +12,7 @@ body{
 	"banner banner banner banner"
 	"corpo corpo corpo corpo"
 	"rodape rodape rodape rodape";
-	
+	position: relative;
 }
 /* ---------- Cabeçalho ---------- */
 #cabecalho{

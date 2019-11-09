@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) and (orientation: portrait){
+
+/* ---------- Menu Textos 1 ---------- */
+
+.menutextos1{
+	width: 401%;
+}
+
+/* ---------- Menu Textos 3 ---------- */
+
+.menutextos3 {
+    margin-left: -422%;
+    width: 365%;
+}
+
+}

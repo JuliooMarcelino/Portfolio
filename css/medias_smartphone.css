@@ -1,0 +1,710 @@
+@media screen and (max-width: 720px) and (orientation: landscape){
+	
+/* ---------- Pai ---------- */
+#container{
+	display:grid;
+	grid-gap:0rem 1rem;
+	grid-template-areas:
+	"cabecalho cabecalho"
+	"banner banner"
+	"corpo corpo"
+	"rodape rodape";
+	position: relative;
+}
+
+/* ---------- Informações ---------- */
+.informacoes{
+	height:80px;
+	position: absolute;
+}
+
+/* ---------- Contatos ---------- */
+.contatos{
+	width:25%;
+	height:80px;
+}
+
+.contatos img{
+	width:3.3em;
+	height:3.2em;
+	margin:18px 0px 0px 25px;
+	padding:0px;
+}
+
+#email, #email2, #tel, #whats{
+	display:none;
+}
+
+#email3{
+	display:block;
+}
+
+#Img{
+	width: 3.3em;
+	height: 3.1em;
+	margin-top: 18px;
+}
+
+/* ---------- Menu Ícone para Tablet e Smartphone ---------- */
+.menu_icone{
+	height: 80px;
+	width: 80px;
+}
+
+.traco{
+	width: 50px;
+	height: 8px;
+	border-radius: 10px;
+	margin-top: 35px;
+	margin-left: 8px;
+}
+
+.traco:before, .traco:after{
+	border-radius: 10px;
+}
+
+.traco:before{
+	top: 17px
+}
+.traco:after{
+	bottom: 17px;
+}
+
+#marcacao:checked ~ label .traco{
+	transform:rotate(220deg);
+}
+
+#marcacao:checked ~ label .traco:before{
+	transform:rotate(276deg);
+	top: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+#marcacao:checked ~ label .traco:after{
+	transform:rotate(276deg);
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+
+/* ---------- Menu ---------- */
+.menu{
+	width: 100%;
+	margin-top: 80px;
+	height: auto;
+}
+
+.menu > ul{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.menu > ul > label > li{
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.titulo_li{
+	cursor: text;
+}
+
+#li_1{
+	transition: ease-in-out 0.8s;
+}
+#li_1:hover{
+	height: 330px;
+}
+#li_1:hover .menutextos1{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_1:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#li_2{
+	transition: ease-in-out 0.8s;
+}
+#li_2:hover{
+	height: 360px;
+}
+#li_2:hover .menutextos2{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_2:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#li_3{
+	transition: ease-in-out 0.8s;
+}
+#li_3:hover{
+	height: 320px;
+}
+#li_3:hover .menutextos3{
+	max-height: 20em;
+	background-color:#333;
+}
+#li_3:hover .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio1:checked ~ label > #li_1{
+	height: 330px;
+}
+#Radio1:checked ~ label > #li_1 .menutextos1{
+	max-height: 20em;
+	background-color:#333;
+}
+#Radio1:checked ~label > #li_1 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio2:checked ~ label > #li_2{
+	height: 360px;
+}
+#Radio2:checked ~ label > #li_2 .menutextos2{
+	max-height: 20em;
+	background-color:#333;
+}
+#Radio2:checked ~label > #li_2 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio3:checked ~ label > #li_3{
+	height: 320px;
+}
+#Radio3:checked ~ label > #li_3 .menutextos3{
+	max-height: 20em;
+	background-color:#333;
+}
+#Radio3:checked ~label > #li_3 .titulo_li{
+	font-size: 3em;
+	font-weight: 900;
+}
+
+#Radio1:checked ~ label > li > .menutextos1{
+	margin-top: 37px;
+}
+
+#Radio2:checked ~ label > li > .menutextos2{
+	margin-top: 38px;
+}
+
+#Radio3:checked ~ label > li > .menutextos3{
+	margin-top: 37px;
+}
+
+
+/* ---------- SubMenu Hover ---------- */
+
+.menu ul li:hover .menutextos1{
+	margin-top: 37px;
+}
+.menu ul li:hover .menutextos2{
+	margin-top: 38px;
+}
+.menu ul li:hover .menutextos3{
+	margin-top: 38px;
+}
+
+/* --------------- SubMenus --------------- */
+
+/* ---------- Menu Textos 1 ---------- */
+
+.menutextos1{
+	margin-left: -3%;
+	width: 106%;
+	margin-top: 37px;
+	overflow: hidden;
+	transition: max-height 0.8s;
+	max-height: 0;
+	position: initial;
+}
+
+.textos1{
+	display: block;
+	margin-top: -5px;
+	margin-left: 0px;
+}
+
+.menutextos1 h4{
+	float: left;
+	margin: 4vw 15px 0px 5vw;
+	width: 92px;
+	box-sizing:border-box;
+}
+
+.menutextos1 p{
+	width: 62vw;
+	margin-left: 28vw;
+	margin-top: 5vw;
+	box-sizing: border-box;
+}
+
+.menutextos1 hr{
+	width: 88%;
+	margin-left: 5vw;
+}
+
+/* ---------- Menu Textos 2 ---------- */
+
+.menutextos2{
+	margin-left: -5%;
+	width: 110%;
+	margin-top: 35px;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	max-height: 0;
+	position: initial;
+}
+
+.textos2{
+	display: block;
+	height: 35vw;
+}
+
+/* ---------- Menu Textos 3 ---------- */
+
+.menutextos3{
+	margin-top: 38px;
+	margin-left: -3%;
+	width: 100%;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	max-height: 0;
+	position: initial;
+	padding-left: 18%;
+}
+
+.textos3{
+	display: block;
+	margin-top: -10px;
+}
+
+.menutextos3 p{
+	width:70vw;
+	margin:20px 0px 0px 0vw;
+	text-align:center;
+}
+
+.menutextos3 i{
+	font-size:25px;
+	margin: 0px 0px 0px -5px;
+}
+
+
+/* ---------- Julio Marcelino ---------- */
+.nome{
+	margin:80px auto 0px auto;
+	height:330px;
+	background-color: #FFF;
+}
+
+.nomecentro {
+    margin: 0px auto;
+    width: 90%;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+.nome h1 {
+    font-size: 6em;
+    margin-top: 15px;
+}
+
+.nome button {
+    padding: 12px 15px;
+    font-size: 1.2em;
+    margin-left: 65%;
+}
+
+.enfeite1 {
+    margin: 12% 0px 0px 15%;
+}
+
+.enfeite2 {
+    margin: 4% 0px 0px 45%;
+}
+
+/* ---------- Banner ---------- */
+#banner{
+	margin-top:110px;
+	margin-bottom: 10vw;
+}
+.Bt{
+	width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    margin: 0px 2vw;
+}
+
+/* ---------- Corpo cor escura ---------- */
+.corpo1{
+	min-height: 670px;
+	max-height: 777px;
+	height: 108vw;
+}
+/* ---------- Corpo cor clara ---------- */
+.corpo2{
+	min-height: 670px;
+	max-height: 777px;
+	height: 108vw;
+}
+
+/* ---------- Quadrados ---------- */
+.quadrados{
+	width: 50%;
+}
+
+.gambiarra{
+	display: block;
+	padding-bottom: 18vw;
+}
+
+#corpo h1{
+	font-size: 6vw;
+}
+
+#corpo h3{
+	font-size: 1.2em;
+}
+
+#corpo img{
+	width: 55%;
+}
+
+/* ---------- Rodapé ---------- */
+#rodape{
+	height: 48vw;
+}
+
+.centralizar{
+	width: 100vw;
+	height: 30vw;
+	margin: 5vw 0px 0px 0px;
+}
+
+.contatosrodape{
+	height: 28vw;
+	padding-top: 0px;
+	width: 48vw;
+}
+
+.contatosrodape img{
+	width: 2.6em;
+	height: 2.5em;
+	margin: 2vw 10px 0px 3vw;
+}
+
+.contatosrodape p{
+	margin: 3vw 0px 0px 12vw;
+	font-size: 1.1em;
+}
+
+.DA{
+	padding-top: 5vw;
+	height: 15px;
+}
+
+.DA p {
+    padding: 0px;
+}
+
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape){
+/* ---------- Banner ---------- */
+#banner{
+	height: 400px;
+}
+.BannerSlide{
+	height: 400px;
+}
+.SlidesImagens{
+    height: 400px;
+}
+}
+
+@media screen and (max-width: 567px) and (orientation: landscape){
+
+/* ---------- Corpo cor escura ---------- */
+.corpo1{
+	min-height: 670px;
+	max-height: 777px;
+	height: 118vw;
+}
+/* ---------- Corpo cor clara ---------- */
+.corpo2{
+	min-height: 670px;
+	max-height: 777px;
+	height: 118vw;
+}
+
+
+/* ---------- Rodapé ---------- */
+
+.contatosrodape p{
+	font-size: 0.9em;
+}
+
+.contatosrodape img{
+	width: 2.4em;
+	height: 2.3em;
+}
+
+}
+
+@media screen and (max-width: 520px) and (orientation: landscape){
+/* ---------- Banner ---------- */
+#banner{
+	height: 320px;
+}
+.BannerSlide{
+	height: 320px;
+}
+.SlidesImagens{
+    height: 320px;
+}
+}
+
+@media screen and (max-width: 510px) and (orientation: landscape){
+	
+/* ---------- Julio Marcelino ---------- */
+
+.nome button {
+    padding: 12px 15px;
+    font-size: 1.1em;
+    margin-left: 65%;
+}
+
+.enfeite2 {
+    margin-left: 42%;
+}
+
+/* ---------- Corpo cor escura ---------- */
+.corpo1{
+	min-height: 625px;
+	max-height: 625px;
+	height: 155vw;
+}
+/* ---------- Corpo cor clara ---------- */
+.corpo2{
+	min-height: 625px;
+	max-height: 625px;
+	height: 155vw;
+}
+
+
+/* ---------- Rodapé ---------- */
+.contatosrodape img{
+	width: 2em;
+	height: 1.9em;
+}
+
+.DA p{
+	font-size: 0.6em;
+}
+
+}
+
+@media screen and (max-width: 465px) and (orientation: landscape){
+
+/* ---------- Julio Marcelino ---------- */
+.nomecentro {
+    font-size: 0.9em;
+}
+
+/* ---------- Rodapé ---------- */
+
+.contatosrodape img{
+	width: 1.7em;
+	height: 1.6em;
+	margin-top: 1vw;
+}
+
+.contatosrodape p{
+	margin-top: 2vw;
+}
+
+.img_esq {
+    margin-left: 12vw !important;
+}
+
+}
+
+@media screen and (max-width: 446px) and (orientation: landscape){
+
+/* ---------- Banner ---------- */
+#banner{
+	height: 270px;
+}
+.BannerSlide{
+	height: 270px;
+}
+.SlidesImagens{
+    height: 270px;
+}
+
+/* ---------- Rodapé ---------- */
+.contatosrodape p{
+	font-size: 0.8em;
+}
+
+.contatosrodape img{
+	width: 1.5em;
+	height: 1.4em;
+}
+
+.DA p {
+	font-size: 0.5em;
+}
+
+}
+
+@media screen and (max-width: 420px) and (orientation: landscape){
+
+/* ---------- Julio Marcelino ---------- */
+.nomecentro {
+    font-size: 0.8em;
+	padding-top: 7vw;
+}
+
+.nome button {
+    padding: 12px 15px;
+    font-size: 1em;
+    margin-left: 65%;
+}
+
+}
+
+@media screen and (max-width: 380px) and (orientation: landscape){
+#cabecalho{
+	height: 270px;
+}
+.informacoes{
+	display: none;
+}
+.nome{
+    margin: 0px auto;
+    height: 270px;
+}
+.nomecentro{
+	padding-top: 0px;
+}
+#banner{
+    margin-top: 0px;
+}
+}
+
+@media screen and (max-width: 370px) and (orientation: landscape){
+
+/* ---------- Rodapé ---------- */
+.contatosrodape p{
+	font-size: 0.7em;
+}
+
+.contatosrodape img{
+	width: 1.2em;
+	height: 1.1em;
+	margin-right: 5px;
+}
+
+}
+
+@media screen and (max-width: 360px) and (orientation: landscape){
+
+/* ---------- Julio Marcelino ---------- */
+.nomecentro {
+    font-size: 0.6em;
+	padding-top: 12vw;
+}
+
+.nome button {
+    padding: 8px 10px;
+    font-size: 0.9em;
+    margin-left: 65%;
+}
+
+.enfeite{
+    font-size: 1.2em;
+}
+
+/* ---------- Rodapé ---------- */
+.contatosrodape p{
+	font-size: 0.6em;
+}
+
+.contatosrodape img{
+	width: 1.1em;
+	height: 1em;
+	margin-right: 5px;
+}
+
+}
+
+@media screen and (max-width: 340px) and (orientation: landscape){
+/* ---------- Banner ---------- */
+#banner{
+	height: 230px;
+}
+.BannerSlide{
+	height: 230px;
+}
+.SlidesImagens{
+    height: 230px;
+}
+}
+
+@media screen and (max-width: 300px) and (orientation: landscape){
+
+/* ---------- Banner ---------- */
+#banner{
+	height: 200px;
+}
+.BannerSlide{
+	height: 200px;
+}
+.SlidesImagens{
+    height: 200px;
+}
+
+/* ---------- Corpo cor escura ---------- */
+.corpo1{
+	min-height: 500px;
+	max-height: 500px;
+	height: 170vw;
+}
+/* ---------- Corpo cor clara ---------- */
+.corpo2{
+	min-height: 500px;
+	max-height: 500px;
+	height: 170vw;
+}
+#corpo h3{
+	font-size: 0.8em;
+}
+/* ---------- Rodapé ---------- */
+.contatosrodape{
+    width: 42vw;
+}
+.contatosrodape p{
+	padding-bottom: 10px;
+	margin-left: 12vw;
+}
+.img_esq{
+    margin-left: 8vw !important;
+	margin-right: 2vw !important;
+}
+
+}
